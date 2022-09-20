@@ -1,24 +1,87 @@
+body {
+    font-family: 'Eb garamond';
+    margin: 0%;
+    padding: 0%;
+}
 .grid-principal {
     display: grid;
-   grid-template-areas: "header" "header" "header"
-   "bienvenida" "bienvenida" "bienvenida"
-   "instalaciones" "instalaciones" "instalaciones"
-   "video" "video" "video"
-   "caracteristicas" "caracteristicas" "caracteristicas"
-   "covid" "covid" "covid"
-   "footer" "footer" "footer";
-
+    width: 100%;
+    margin: 0% auto;
+    padding: 0%;
+   grid-template-areas:
+    "header header header"
+    "IMAGEN IMAGEN IMAGEN"
+    "bienvenida bienvenida bienvenida"
+    "instalaciones instalaciones instalaciones"
+    "video video video"
+    "mascotas musica movilidad"
+    "covid covid covid"
+    "footer1 footer2 footer3";
+    justify-content: stretch;
 }
 .header {
+    grid-area: header;
     font: rgb(194, 194, 194);
     font-family: 'EB Garamond', serif;
-    font-size: 3vw;
+    font-size: 2vw;
+
+    background-color: antiquewhite;
+}
+.menu {
+    justify-content: flex-end;
+    list-style: none;
+    text-decoration: none;
+}
+.bienvenida {
+    grid-area: bienvenida;
+    overflow: auto;
+}
+
+.imagen-principal {
+    grid-area: IMAGEN;
+    z-index: -1;
+    justify-content: center;
+}
+
+.instalaciones {
+    grid-area: instalaciones;
+    background-color: blue;
+}
+.video {
+    grid-area: video;
 
 }
-.imagen-principal {
-    position: absolute;
-    margin-top: -5vw;
-    margin-left: -122px;
-    
-    }
+.mascotas {
+    grid-area: mascotas;
+}
 
+.covid {
+    grid-area: covid;
+}
+.musica {
+    grid-area: musica;
+}
+.movilidad {
+    grid-area: movilidad;
+}
+
+.foter1 {
+    grid-area: footer1;
+    background-color: yellow;
+}
+.foter2 {
+    grid-area: footer2;
+    background-color: red;
+}
+.foter3 {
+    grid-area: footer3;
+    background-color: orange;
+}
+.caja {
+    border-style: solid;
+    border-radius: 1px;
+    border-color: black;
+    margin: 0%;
+    padding: 0%;
+
+}
