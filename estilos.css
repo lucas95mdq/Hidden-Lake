@@ -1,14 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
 body {
-    font-family: 'Eb garamond';
-    margin: 0%;
-    padding: 0%;
+    margin: auto;
+    font-family: 'EB Garamond', serif;
+    width: 100%;
+    height: auto;
 }
 .grid-principal {
+    margin: 0;
+    padding: 0;
     display: grid;
-    width: 100%;
-    margin: 0% auto;
-    padding: 0%;
-   grid-template-areas:
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
     "header header header"
     "IMAGEN IMAGEN IMAGEN"
     "bienvenida bienvenida bienvenida"
@@ -17,20 +24,68 @@ body {
     "mascotas musica movilidad"
     "covid covid covid"
     "footer1 footer2 footer3";
-    justify-content: stretch;
+    justify-content: center;
+    grid-column: auto auto auto;
 }
 .header {
     grid-area: header;
-    font: rgb(194, 194, 194);
-    font-family: 'EB Garamond', serif;
-    font-size: 2vw;
-
-    background-color: antiquewhite;
+    width: 100%;
+    height: auto;
+    font: rgb(255, 255, 255);
+    font-size: 2vh;
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    position: relative;
+    background-color:rgb(0 , 0 , 0, 0) ;
 }
-.menu {
-    justify-content: flex-end;
+.imagen-principal{
+    grid-area: imagen;
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(recurso1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    margin-left: 0;
+    position: absolute
+}
+.logo {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding: 200px;
+}
+ul {
+    margin-right: 30px;
+    margin-top: 10px;
+}
+ul li {
     list-style: none;
-    text-decoration: none;
+    display: inline;
+    margin-right: 40px;
+}
+a {
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   text-shadow: 3px 3px 3px black;
+}
+a:hover {
+    text-decoration: underline white ;
+    text-underline-offset: 8px;
+}
+.bg {
+    width: 100%;
+    height: auto;
+    background-image: url(recurso1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: -1;
 }
 .bienvenida {
     grid-area: bienvenida;
@@ -39,6 +94,9 @@ body {
 
 .imagen-principal {
     grid-area: IMAGEN;
+    display: flex;
+    width: 100%;
+    height: auto;
     z-index: -1;
     justify-content: center;
 }
@@ -48,21 +106,26 @@ body {
     background-color: blue;
 }
 .video {
+    width: 100%;
     grid-area: video;
-
+    background-color: aliceblue;
 }
 .mascotas {
     grid-area: mascotas;
+    background-color: black;
 }
 
 .covid {
     grid-area: covid;
+    background-color: antiquewhite;
 }
 .musica {
     grid-area: musica;
+    background-color: crimson;
 }
 .movilidad {
     grid-area: movilidad;
+    background-color: coral;
 }
 
 .foter1 {
@@ -81,7 +144,6 @@ body {
     border-style: solid;
     border-radius: 1px;
     border-color: black;
-    margin: 0%;
-    padding: 0%;
-
+    margin: 0;
+    padding: 10px;
 }
