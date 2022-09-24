@@ -5,133 +5,171 @@
         
 }
 body {
-    margin: auto;
     font-family: 'EB Garamond', serif;
-    width: 100%;
-    height: auto;
     background-color: rgba(235,235,235,255);
 }
-.grid-principal {
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-    "header header header"
-    "bienvenida bienvenida bienvenida"
-    "instalaciones instalaciones instalaciones"
-    "video video video"
-    "mascotas musica movilidad"
-    "covid covid covid"
-    "footer1 footer2 footer3";
-    justify-content: center;
-    grid-column: auto auto auto;
-}
+
+
 .header {
-    grid-area: header;
     width: 100%;
-    height: auto;
     font: rgb(255, 255, 255);
-    /*font-size: 2vh;*/
-    font-size: 1fr;
-    display: wrap;
-    background-image: url(recurso1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.nav {
-    display: flex;
-    justify-content: right;
-    align-content: center;
 }
 
-.logo {
+.header-nav {
+    max-width: 1080px;
+    height: auto;
     display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-top: 25vh;
-    margin-bottom: 75vh;
-    /* margin-top: 100px;
-   margin-right: 30vh;
-       margin-bottom: 200px;
-    padding: 200px;*/
-    scale: 1.2;
+    justify-content: flex-end;
+    margin: 0 auto;
 }
-ul {
-    margin-right: 30px;
-    margin-top: 10px;
-}
-ul li {
+
+.header-nav-menu {
+    display: flex;
     list-style: none;
-    display: inline;
     margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
-a {
+.header-nav-menu-item {
+    font-size: 20px;
+    margin-right: 30px;
+}
+.subrrallado {
    text-decoration: none;
    color: rgb(255, 255, 255);
    text-shadow: 3px 3px 3px black;
 }
-a:hover {
+.subrrallado:hover {
     text-decoration: underline white ;
     text-underline-offset: 8px;
+    transition: 0.5s;
 }
 .active {
     text-decoration: underline white ;
     text-underline-offset: 8px;
 }
 
+.fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.logo {
+    text-align: center;
+    width: 100%;
+}
+
+.logo-logo {
+    max-width: 50%;
+    margin: 250px auto;
+    margin-bottom: 600px;
+}
+
 .bienvenida {
-    grid-area: bienvenida;
-    overflow: auto;
-    position: relative;
+ 
 }
 
 .instalaciones {
-    grid-area: instalaciones;
-    margin-top: 5vw;
+
 }
 .titulo {
     text-align: center;
-    font-size: 5vw;
-    font-weight: 50;
+    font-size: 60px;
+    font-weight: bold;
 }
-p {
+.info {
     text-align: center;
-    font-size: 2vw;
-    margin: 5vw;
-    margin-left: 20vw;
-    margin-right: 20vw;
-
+    font-size: 30px;
+    margin: 2vw 20vw;
 }
+/*
 .video {
     width: 100%;
     height: 720px;
-    grid-area: video;
     background-color: rgba(74,95,89,255);
 }
 .mascotas {
-    grid-area: mascotas;
+
 }
 
 .covid {
-    grid-area: covid;
+
 }
 .musica {
-    grid-area: musica;
+
 }
 .movilidad {
-    grid-area: movilidad;
-}
+*/
+
 .footer {
     background-color: rgba(74,95,89,255);
+
+} 
+.footer-nav {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
 }
 
-.foter1 {
-    grid-area: footer1;
+.logo-footer {
+    display: flex;
+    align-items: center;
+    padding: 0;
 }
-.foter2 {
-    grid-area: footer2;
+.logo-logo-footer {
+    max-height: 50%;
 }
-.foter3 {
-    grid-area: footer3;
+
+.footer-menu {
+    display: flex;
+}
+
+.footer-menu-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.footer-menu-item {
+    font-size: 18px;
+    font-weight: 10;
+    margin: 5px;
+}
+
+.footer-menu-item-item {
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+}
+
+.footer-menu-item-item:hover {
+    text-decoration: underline white ;
+}
+
+.footer-contacto {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    color: white;
+    font-weight: 100;
+}
+
+.fa-brands {
+    margin-right: 5px;
+}
+.footer-contacto-p {
+    height: 50%;
+    font-size: 22px;
+}
+
+.redes{
+    padding-top: 10px;
+    height: 50%;
+    font-size: 22px;
 }
