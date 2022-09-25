@@ -27,7 +27,7 @@ body {
     display: flex;
     list-style: none;
     margin-right: 40px;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 .header-nav-menu-item {
@@ -42,7 +42,6 @@ body {
 .subrrallado:hover {
     text-decoration: underline white ;
     text-underline-offset: 8px;
-    transition: 0.5s;
 }
 .active {
     text-decoration: underline white ;
@@ -50,10 +49,14 @@ body {
 }
 
 .fondo {
+    background-image: URL(recurso1.png);
     position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
     top: 0;
     left: 0;
     width: 100%;
+    height: 1200px;
     z-index: -1;
 }
 
@@ -64,45 +67,359 @@ body {
 
 .logo-logo {
     max-width: 50%;
-    margin: 250px auto;
-    margin-bottom: 600px;
+    margin: 10vw 20vw;
 }
 
 .bienvenida {
- 
+    margin-top: 550px;
 }
 
-.instalaciones {
-
-}
 .titulo {
     text-align: center;
     font-size: 60px;
-    font-weight: bold;
+    font-weight: 100;
 }
 .info {
     text-align: center;
     font-size: 30px;
-    margin: 2vw 20vw;
+    margin: 2vw auto;
+    max-width: 800px;
 }
-/*
-.video {
+
+
+
+
+#carrusel-contenido {
+    width: 1080px;
+    margin: 50px auto;
+}
+
+
+#carrusel-caja {
+    display: flex;
+     /* animation: automatizacion 15s infinite linear; */
+    transition: all 0.75s ease;
+    height: 410px;
     width: 100%;
-    height: 720px;
+}
+
+.imagenes{
+    height: 400px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.carrusel-1 {
+    position: absolute;
+    animation: carrusel-1 20s infinite linear;
+    transition: all 0.75s ease;
+}
+
+.carrusel-2 {
+    position: absolute;
+    animation: carrusel-2 20s infinite linear;
+    transition: all 0.75s ease; 
+}
+
+.carrusel-3 {
+    position: absolute;
+    animation: carrusel-3 20s infinite linear;
+    transition: all 0.75s ease;
+}
+
+.carrusel-4 {
+    position: absolute;
+    animation: carrusel-4 20s infinite linear;
+    transition: all 0.75s ease;
+}
+
+/* @keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    22.5% {
+        margin-left: 0;
+    }
+    27.5% {
+        margin-left: -100%;
+    }
+    47.5% {
+        margin-left: -100%;
+    }
+    52.5% {
+        margin-left: -200%;
+    }
+    72.5% {
+        margin-left: -200%;
+    }
+    77.5% {
+        margin-left: -300%;
+    }
+    90% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: 0;
+    }
+} */
+
+
+@keyframes carrusel-1 {
+    0% {
+        scale: 0.8;
+        z-index: -1;
+text-align: left;
+    }
+    20% {
+        scale: 0.8;
+        z-index: -1;
+        text-align: left;
+    }
+    25% {
+        visibility: hidden;
+        z-index: -1;
+        text-align: center;
+    }
+    45% {
+        visibility: hidden;
+        z-index: -1;
+        text-align: center;
+    }
+    50% {
+        scale: 0.8;
+        z-index: -1;
+  text-align: right;
+    }
+    70% {
+        scale: 0.8;
+        z-index: -1;
+        text-align: right;
+    }
+    75% {
+        scale: 1;
+        z-index: 2;
+        text-align: center;
+    }
+    95% {
+        scale: 1;
+        z-index: 1;
+text-align: center;
+    }
+    100% {
+        scale: 0.8;
+        z-index: -1;
+        text-align: left;
+    }
+}
+
+@keyframes carrusel-2 {
+    0% {
+        scale: 0;
+        visibility: hidden;
+        z-index: -1;
+        left: 25%;
+    }
+    20% {
+        scale: 0;
+        visibility: hidden;
+        z-index: -1;
+        left: 25%; 
+    }
+    25% {
+        scale: 0.8;
+        z-index: -1;
+        left: 50%;
+        visibility: visible;
+    }
+    45% {
+        scale: 0.8;
+        z-index: -1;
+        left: 50%;
+    }
+    50% {
+        scale: 1;
+        z-index: 1;
+        left: 25%;
+    }
+    70% {
+        scale: 1;
+        z-index: 1;
+        left: 25%;
+    }
+    75% {
+        scale: 0.8;
+        z-index: -1;
+        left: 0px; 
+    }
+    95% {
+        scale: 0.8;
+        z-index: -1;
+        left: 0px;
+    }
+    100% {
+        scale: 0;
+        visibility: hidden;
+        z-index: -1;
+        left: 25%;
+    }
+}
+
+@keyframes carrusel-3 {
+    0% {
+        scale: 0.8;
+        z-index: -1;
+        left: 50%;
+    }
+    20% {
+        scale: 0.8;
+        z-index: -1;
+        left: 50%;
+    }
+    25% {
+        scale: 1;
+        z-index: 1;
+        left: 25%;
+    }
+    45% {
+        scale: 1;
+        z-index: 1;
+        left: 25%;
+    }
+    50% {
+        scale: 0.8;
+        z-index: -1;
+        left: 0px; 
+    }
+    70% {
+        scale: 0.8;
+        z-index: -1;
+        left: 0px;
+    }
+    75% {
+        scale: 0;
+        visibility: hidden;
+        z-index: -1;
+        left: 25%;
+    }
+    95% {
+        scale: 0;
+        visibility: hidden;
+        z-index: -1;
+        left: 25%;
+    }
+    100% {
+        scale: 0.8;
+        z-index: -1;
+        left: 50%;
+    }
+}
+@keyframes carrusel-4 {
+    0% {
+        scale: 1;
+        z-index: 1;
+        left: 25%;
+    }
+    20% {
+        scale: 1;
+        z-index: 1;
+        left: 25%;
+    }
+    25% {
+        scale: 0.8;
+        z-index: -1;
+        left: 0px; 
+    }
+    45% {
+        scale: 0.8;
+        z-index: -1;
+        left: 0px;
+    }
+    50% {
+        scale: 0;
+        visibility: hidden;
+        z-index: -1;
+        left: 25%;
+    }
+    70% {
+        scale: 0;
+        visibility: hidden;
+        z-index: -1;
+        left: 25%;
+    }
+    75% {
+        scale: 0.8;
+        z-index: -1;
+        left: 50%;
+    }
+    95% {
+        scale: 0.8;
+        z-index: -1;
+        left: 50%;
+    }
+    100% {
+        scale: 1;
+        z-index: 1;
+        left: 25%;
+    }
+}
+
+
+
+
+
+.video {
+    display: flex;
     background-color: rgba(74,95,89,255);
+    justify-content: center;
+    align-content: center;
+    max-width: 100%;
 }
-.mascotas {
-
+.video >iframe {
+    max-width: 1080px;
+    padding: 20px 0;
+}
+.contenedor-logos {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1080px;
+    margin: 10px auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
 }
 
+.caracteristica {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 33%;
+    margin: 0;
+    padding: 0;
+}
+
+.caracteristica-logo {
+    background-color: rgba(226,226,226,255);
+    color: rgba(67,88,82,255);
+    border-width: 5px;
+    border-color: rgba(226,226,226,255);
+    border-style: solid;
+    box-shadow: 1px 1px 2px rgb(99, 99, 99);
+    border-radius: 50%;
+}
+
+
+.caracteristica-descripcion {
+    margin: 20px auto;
+    align-items: flex-start;
+    height: 20%;
+    max-width: 80%;
+}
 .covid {
-
+    margin: 30px auto;
 }
-.musica {
-
-}
-.movilidad {
-*/
 
 .footer {
     background-color: rgba(74,95,89,255);
@@ -112,20 +429,27 @@ body {
     max-width: 1080px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .logo-footer {
     display: flex;
     align-items: center;
     padding: 0;
+    max-width: 33%;
+
 }
 .logo-logo-footer {
     max-height: 50%;
+    border: 6px;
+    border-color: black;
+    margin-left: 2vw;
 }
 
 .footer-menu {
     display: flex;
+    min-width: 33%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .footer-menu-menu{
@@ -138,8 +462,8 @@ body {
 
 .footer-menu-item {
     font-size: 18px;
-    font-weight: 10;
-    margin: 5px;
+    font-weight: 100;
+    margin-bottom: 10px;
 }
 
 .footer-menu-item-item {
@@ -158,18 +482,22 @@ body {
     justify-content: center;
     color: white;
     font-weight: 100;
+    max-width: 33%;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 2vw;
 }
 
 .fa-brands {
     margin-right: 5px;
+    margin-bottom: 10px;
+    scale: 1.3;
 }
 .footer-contacto-p {
-    height: 50%;
-    font-size: 22px;
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 10px;
 }
 
 .redes{
-    padding-top: 10px;
-    height: 50%;
-    font-size: 22px;
+    font-size: 18px;
 }

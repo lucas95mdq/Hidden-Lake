@@ -7,65 +7,108 @@
     <title>Hidden Lake</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/9cb10a02ae.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9cb10a02ae.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/ico" href="Logo_1.ico" sizes=any> 
 </head>
 <body>
 <header>
     <div class="header">
-      <div class="header-nav">
+      <nav class="header-nav">
         <ul class="header-nav-menu">
-          <li class="header-nav-menu-item"><a href="" class="subrrallado active">INICIO</a></li>
+          <li class="header-nav-menu-item active"><a href="" class="subrrallado active">INICIO</a></li>
           <li class="header-nav-menu-item"><a href="complejo.html" class="subrrallado">COMPLEJO</a></li>
           <li class="header-nav-menu-item"><a href="ubicacion.html" class="subrrallado">UBICACIÓN</a></li>
           <li class="header-nav-menu-item"><a href="reservas.html" class="subrrallado">RESERVAS</a></li>
         </ul>
-      </div> 
+      </nav> 
     </div>
  </header>
-
 <div class="fondo">
-  <img src="recurso1.png" alt="fondo">
 </div>
 <div class="logo">
   <img src="logo.png" alt="Hidden Lake" class="logo-logo">
 </div>
-
-  <div class="bienvenida">
-    <h1 class="titulo">
+<section class="bienvenida">
+  <h1 class="titulo">
       BIENVENIDOS
-    </h1>
-    <p class="info">
+  </h1>
+  <p class="info">
       Un lugar preparado para disfrutar y descansar en Aparts, Cabañas y camping, con amplios espacios totalmente equipados para su total comodidad, decorados especialmente para disfrutar.
-    </p>
-  </div>
-  <!-- 
-  <div class="instalaciones caja">
+  </p>
+</section>
+  <section class="instalaciones">
     <h1 class="titulo">
       INSTALACIONES
     </h1>
-    <div class="carrusel ">
-      imagenes en carrusel
+
+
+ 
+    <div id="carrusel-contenido">
+      <div id="carrusel-caja">
+          <div class="carrusel-elemento carrusel-1">
+              <img class="imagenes" src="carrusel/carrusel-1.png" alt="Juegos" >
+          </div>
+          <!-- <div class="carrusel-elemento carrusel-2">   
+              <img class="imagenes" src="carrusel/carrusel-2.jpg" alt="jacussi">
+            </div>
+          <div class="carrusel-elemento carrusel-3">   
+              <img class="imagenes" src="carrusel/carrusel-3.jpg" alt="cabaña">    
+          </div>
+          <div class="carrusel-elemento carrusel-4">   
+            <img class="imagenes" src="carrusel/carrusel-4.jpg" alt="Pileta"> -->
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    </div>
+  </section>
+
+  <section class="video">
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/UJ8yFTkfqoQ" title="Cabañas Villa Labrador Bariloche." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video-cabanas"></iframe>
+  </section>
+
+
+<section class="contenedor">
+  <div class="contenedor-logos">
+    <div class="caracteristica">
+      <div class="caracteristica-logo">
+        <i class="fa-solid fa-shield-dog"></i>
+      </div>
+      <div class="caracteristica-descripcion">
+        Pet Friendly
+      </div>
+    </div>
+    <div class="caracteristica">
+      <div class="caracteristica-logo">
+        <i class="fa-solid fa-volume-xmark"></i>
+      </div>
+      <div class="caracteristica-descripcion">
+        No se Permite Musica Fuerte
+      </div>
+    </div>
+    <div class="caracteristica">
+      <div class="caracteristica-logo">
+        <i class="fa-solid fa-wheelchair"></i>
+      </div>
+      <div class="caracteristica-descripcion">
+        Personas con Movilidad Reducida
+      </div>
     </div>
   </div>
-  <DIV class="video">
-    <iframe src="https://www.youtube.com/watch?v=9w3gy2dYN_E" frameborder="0"></iframe>
-  </DIV>
-  <div class="mascotas">
-    se aceptan mascotas
-  </div>
-  <div class="musica">
-    no musica fuerte
-  </div>
-  <div class="movilidad">
-    apto para personas movilidad reducida
-  </div>
   <div class="covid"> 
-    boludes de covid
+    <p class="info">La exposición al Covid-19 es un riesgo inherente en cualquier lugar público donde haya personas. No podemos garantizarles que no estará expuesto en su visita. Rogamos respetar las normas de seguridad del protocolo vigente en nuestro establecimiento.</p>
   </div>
+</section>
 
--->
   <footer class="footer">
     <div class="footer-nav">
       <div class="logo-footer">
@@ -73,10 +116,10 @@
       </div>
       <div class="footer-menu">
         <ul class="footer-menu-menu">
-          <li class="footer-menu-item"><a href="index.html" class="footer-menu-item-item">INICIO</a></li>
-          <li class="footer-menu-item"><a href="complejo.html" class="footer-menu-item-item">COMPLEJO</a></li>
-          <li class="footer-menu-item"><a href="ubicacion.html" class="footer-menu-item-item">UBICACIÓN</a></li>
-          <li class="footer-menu-item"><a href="reservas.html" class="footer-menu-item-item">RESERVAS</a></li>
+          <li class="footer-menu-item"><a href="index.html" class="footer-menu-item-item">Inicio</a></li>
+          <li class="footer-menu-item"><a href="complejo.html" class="footer-menu-item-item">Complejo</a></li>
+          <li class="footer-menu-item"><a href="ubicacion.html" class="footer-menu-item-item">Ubicación</a></li>
+          <li class="footer-menu-item"><a href="reservas.html" class="footer-menu-item-item">Reservas</a></li>
         </ul>
       </div>
       <div class="footer-contacto">
@@ -85,7 +128,11 @@
         Contacto</p>
         </div>
         <div class="redes">
-        <i class="fa-brands fa-instagram"></i><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-square-twitter"></i> @hiddenlake
+          <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+          @hiddenlake
+          <br><br><br><br>
         </div>
       </div>
     </div>
