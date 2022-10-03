@@ -16,7 +16,7 @@ body {
 }
 
 .header-nav {
-    max-width: 1080px;
+    max-width: 1920px;
     height: auto;
     display: flex;
     justify-content: flex-end;
@@ -56,7 +56,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 1200px;
+    height: 1280px;
     z-index: -1;
 }
 
@@ -75,6 +75,7 @@ body {
 }
 
 .titulo {
+    margin-top: 100px;
     text-align: center;
     font-size: 60px;
     font-weight: 100;
@@ -90,24 +91,30 @@ body {
 
 
 #carrusel-contenido {
-    width: 1080px;
+    width: 500px;
     margin: 50px auto;
 }
 
 
 #carrusel-caja {
+    position: relative;
     display: flex;
-     /* animation: automatizacion 15s infinite linear; */
+    justify-content: center;
+    align-items: center;
     transition: all 0.75s ease;
     height: 410px;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .imagenes{
-    height: 400px;
-    width: auto;
+    height: auto;
+    width: 20vw;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 0 0 5px black;
+    margin: 0;
+    padding: 0;
 }
 
 .carrusel-1 {
@@ -117,19 +124,16 @@ body {
 }
 
 .carrusel-2 {
-    position: absolute;
     animation: carrusel-2 20s infinite linear;
     transition: all 0.75s ease; 
 }
 
 .carrusel-3 {
-    position: absolute;
     animation: carrusel-3 20s infinite linear;
     transition: all 0.75s ease;
 }
 
 .carrusel-4 {
-    position: absolute;
     animation: carrusel-4 20s infinite linear;
     transition: all 0.75s ease;
 }
@@ -146,7 +150,7 @@ body {
     }
     47.5% {
         margin-left: -100%;
-    }
+    } 
     52.5% {
         margin-left: -200%;
     }
@@ -169,47 +173,47 @@ body {
     0% {
         scale: 0.8;
         z-index: -1;
-text-align: left;
+        left: 0;
     }
     20% {
         scale: 0.8;
         z-index: -1;
-        text-align: left;
+        left: 0;
     }
     25% {
         visibility: hidden;
         z-index: -1;
-        text-align: center;
+        left: 10%;
     }
     45% {
         visibility: hidden;
         z-index: -1;
-        text-align: center;
+        left: 10%;
     }
     50% {
         scale: 0.8;
         z-index: -1;
-  text-align: right;
+        left: 100%;
     }
     70% {
         scale: 0.8;
         z-index: -1;
-        text-align: right;
+        left: 100%;
     }
     75% {
-        scale: 1;
+        scale: 1.3;
         z-index: 2;
-        text-align: center;
+        left: 10%;
     }
     95% {
-        scale: 1;
+        scale: 1.3;
         z-index: 1;
-text-align: center;
+        left: 10%;
     }
     100% {
         scale: 0.8;
         z-index: -1;
-        text-align: left;
+        left: 0;
     }
 }
 
@@ -218,50 +222,52 @@ text-align: center;
         scale: 0;
         visibility: hidden;
         z-index: -1;
-        left: 25%;
+        left: 40vw;
     }
     20% {
         scale: 0;
         visibility: hidden;
         z-index: -1;
-        left: 25%; 
+        left: 40vw;
     }
     25% {
         scale: 0.8;
         z-index: -1;
-        left: 50%;
+        left: 60vw;
         visibility: visible;
     }
     45% {
         scale: 0.8;
         z-index: -1;
-        left: 50%;
+        left: 60vw;
     }
     50% {
-        scale: 1;
+        height: 400px;
+        width: auto;
         z-index: 1;
-        left: 25%;
+        left: 40vw;
     }
     70% {
-        scale: 1;
+        height: 400px;
+        width: auto;
         z-index: 1;
-        left: 25%;
+        left: 40vw;
     }
     75% {
         scale: 0.8;
         z-index: -1;
-        left: 0px; 
+        left: 20vw;
     }
     95% {
         scale: 0.8;
         z-index: -1;
-        left: 0px;
+        left: 20vw;
     }
     100% {
         scale: 0;
         visibility: hidden;
         z-index: -1;
-        left: 25%;
+ 
     }
 }
 
@@ -269,98 +275,98 @@ text-align: center;
     0% {
         scale: 0.8;
         z-index: -1;
-        left: 50%;
+        left: 60vw;
     }
     20% {
         scale: 0.8;
         z-index: -1;
-        left: 50%;
+        left: 60vw;
     }
     25% {
-        scale: 1;
+        scale: 1.3;
         z-index: 1;
-        left: 25%;
+        left: 40vw;
     }
     45% {
-        scale: 1;
+        scale: 1.3;
         z-index: 1;
-        left: 25%;
+        left: 40vw;
     }
     50% {
         scale: 0.8;
         z-index: -1;
-        left: 0px; 
+        left: 20vw;
     }
     70% {
         scale: 0.8;
         z-index: -1;
-        left: 0px;
+        left: 20vw;
     }
     75% {
         scale: 0;
         visibility: hidden;
         z-index: -1;
-        left: 25%;
+        left: 40vw;
     }
     95% {
         scale: 0;
         visibility: hidden;
         z-index: -1;
-        left: 25%;
+        left: 40vw;
     }
     100% {
         scale: 0.8;
         z-index: -1;
-        left: 50%;
+        left: 60vw;
     }
 }
 @keyframes carrusel-4 {
     0% {
-        scale: 1;
+        scale: 1.3;
         z-index: 1;
-        left: 25%;
+        left: 40vw;
     }
     20% {
-        scale: 1;
+        scale: 1.3;
         z-index: 1;
-        left: 25%;
+        left: 40vw;
     }
     25% {
         scale: 0.8;
         z-index: -1;
-        left: 0px; 
+        left: 20vw;
     }
     45% {
         scale: 0.8;
         z-index: -1;
-        left: 0px;
+        left: 20vw;
     }
     50% {
         scale: 0;
         visibility: hidden;
         z-index: -1;
-        left: 25%;
+        left: 40vw;
     }
     70% {
         scale: 0;
         visibility: hidden;
         z-index: -1;
-        left: 25%;
+        left: 40vw;
     }
     75% {
         scale: 0.8;
         z-index: -1;
-        left: 50%;
+        left: 60vw;
     }
     95% {
         scale: 0.8;
         z-index: -1;
-        left: 50%;
+        left: 60vw;
     }
     100% {
-        scale: 1;
+        scale: 1.3;
         z-index: 1;
-        left: 25%;
+        left: 40vw;
     }
 }
 
