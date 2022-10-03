@@ -83,296 +83,52 @@ body {
 .info {
     text-align: center;
     font-size: 30px;
-    margin: 2vw auto;
+    margin: 100px auto;
     max-width: 800px;
 }
 
 
-
+.instalaciones {
+    margin-top: 150px;
+}
 
 #carrusel-contenido {
-    width: 500px;
+    width: 1080px;
+    height: auto;
     margin: 50px auto;
+    overflow: hidden;
 }
 
 
 #carrusel-caja {
-    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.75s ease;
-    height: 410px;
-    width: 100%;
+    width: 400%;
     margin: 0;
     padding: 0;
+    animation: slide 20s infinite alternate ease-in-out;
 }
-
+.carrusel-elemento {
+    width: 100%;
+}
 .imagenes{
-    height: auto;
-    width: 20vw;
+    width: 98%;
     border-radius: 10px;
     box-shadow: 0 0 5px black;
-    margin: 0;
+    margin: 10px 1%;
     padding: 0;
 }
 
-.carrusel-1 {
-    position: absolute;
-    animation: carrusel-1 20s infinite linear;
-    transition: all 0.75s ease;
-}
 
-.carrusel-2 {
-    animation: carrusel-2 20s infinite linear;
-    transition: all 0.75s ease; 
-}
-
-.carrusel-3 {
-    animation: carrusel-3 20s infinite linear;
-    transition: all 0.75s ease;
-}
-
-.carrusel-4 {
-    animation: carrusel-4 20s infinite linear;
-    transition: all 0.75s ease;
-}
-
-/* @keyframes automatizacion {
-    0% {
-        margin-left: 0;
-    }
-    22.5% {
-        margin-left: 0;
-    }
-    27.5% {
-        margin-left: -100%;
-    }
-    47.5% {
-        margin-left: -100%;
-    } 
-    52.5% {
-        margin-left: -200%;
-    }
-    72.5% {
-        margin-left: -200%;
-    }
-    77.5% {
-        margin-left: -300%;
-    }
-    90% {
-        margin-left: -300%;
-    }
-    100% {
-        margin-left: 0;
-    }
-} */
-
-
-@keyframes carrusel-1 {
-    0% {
-        scale: 0.8;
-        z-index: -1;
-        left: 0;
-    }
-    20% {
-        scale: 0.8;
-        z-index: -1;
-        left: 0;
-    }
-    25% {
-        visibility: hidden;
-        z-index: -1;
-        left: 10%;
-    }
-    45% {
-        visibility: hidden;
-        z-index: -1;
-        left: 10%;
-    }
-    50% {
-        scale: 0.8;
-        z-index: -1;
-        left: 100%;
-    }
-    70% {
-        scale: 0.8;
-        z-index: -1;
-        left: 100%;
-    }
-    75% {
-        scale: 1.3;
-        z-index: 2;
-        left: 10%;
-    }
-    95% {
-        scale: 1.3;
-        z-index: 1;
-        left: 10%;
-    }
-    100% {
-        scale: 0.8;
-        z-index: -1;
-        left: 0;
-    }
-}
-
-@keyframes carrusel-2 {
-    0% {
-        scale: 0;
-        visibility: hidden;
-        z-index: -1;
-        left: 40vw;
-    }
-    20% {
-        scale: 0;
-        visibility: hidden;
-        z-index: -1;
-        left: 40vw;
-    }
-    25% {
-        scale: 0.8;
-        z-index: -1;
-        left: 60vw;
-        visibility: visible;
-    }
-    45% {
-        scale: 0.8;
-        z-index: -1;
-        left: 60vw;
-    }
-    50% {
-        height: 400px;
-        width: auto;
-        z-index: 1;
-        left: 40vw;
-    }
-    70% {
-        height: 400px;
-        width: auto;
-        z-index: 1;
-        left: 40vw;
-    }
-    75% {
-        scale: 0.8;
-        z-index: -1;
-        left: 20vw;
-    }
-    95% {
-        scale: 0.8;
-        z-index: -1;
-        left: 20vw;
-    }
-    100% {
-        scale: 0;
-        visibility: hidden;
-        z-index: -1;
- 
-    }
-}
-
-@keyframes carrusel-3 {
-    0% {
-        scale: 0.8;
-        z-index: -1;
-        left: 60vw;
-    }
-    20% {
-        scale: 0.8;
-        z-index: -1;
-        left: 60vw;
-    }
-    25% {
-        scale: 1.3;
-        z-index: 1;
-        left: 40vw;
-    }
-    45% {
-        scale: 1.3;
-        z-index: 1;
-        left: 40vw;
-    }
-    50% {
-        scale: 0.8;
-        z-index: -1;
-        left: 20vw;
-    }
-    70% {
-        scale: 0.8;
-        z-index: -1;
-        left: 20vw;
-    }
-    75% {
-        scale: 0;
-        visibility: hidden;
-        z-index: -1;
-        left: 40vw;
-    }
-    95% {
-        scale: 0;
-        visibility: hidden;
-        z-index: -1;
-        left: 40vw;
-    }
-    100% {
-        scale: 0.8;
-        z-index: -1;
-        left: 60vw;
-    }
-}
-@keyframes carrusel-4 {
-    0% {
-        scale: 1.3;
-        z-index: 1;
-        left: 40vw;
-    }
-    20% {
-        scale: 1.3;
-        z-index: 1;
-        left: 40vw;
-    }
-    25% {
-        scale: 0.8;
-        z-index: -1;
-        left: 20vw;
-    }
-    45% {
-        scale: 0.8;
-        z-index: -1;
-        left: 20vw;
-    }
-    50% {
-        scale: 0;
-        visibility: hidden;
-        z-index: -1;
-        left: 40vw;
-    }
-    70% {
-        scale: 0;
-        visibility: hidden;
-        z-index: -1;
-        left: 40vw;
-    }
-    75% {
-        scale: 0.8;
-        z-index: -1;
-        left: 60vw;
-    }
-    95% {
-        scale: 0.8;
-        z-index: -1;
-        left: 60vw;
-    }
-    100% {
-        scale: 1.3;
-        z-index: 1;
-        left: 40vw;
-    }
-}
-
-
-
-
+ @keyframes slide {
+    0%    {margin-left: 0;}
+    20%   {margin-left: 0;}
+    25%   {margin-left: -100%;}
+    45%   {margin-left: -100%;} 
+    50%   {margin-left: -200%;}
+    70%   {margin-left: -200%;}
+    75%   {margin-left: -300%;}
+    100%  {margin-left: -300%;}
+} 
 
 .video {
     display: flex;
