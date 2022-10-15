@@ -75,7 +75,7 @@ body {
 }
 
 .titulo {
-    margin-top: 100px;
+    margin: 8rem;
     text-align: center;
     font-size: 60px;
     font-weight: 100;
@@ -137,9 +137,13 @@ body {
     align-content: center;
     max-width: 100%;
 }
-.video >iframe {
+.video > iframe {
     max-width: 1080px;
     padding: 20px 0;
+}
+
+.contenedor {
+margin: 4rem auto;
 }
 .contenedor-logos {
     display: flex;
@@ -148,7 +152,7 @@ body {
     margin: 10px auto;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 28px;
 }
 
 .caracteristica {
@@ -157,30 +161,25 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 33%;
+    width: 30%;
     margin: 0;
     padding: 0;
 }
 
-.caracteristica-logo {
-    background-color: rgba(226,226,226,255);
-    color: rgba(67,88,82,255);
-    border-width: 5px;
-    border-color: rgba(226,226,226,255);
-    border-style: solid;
-    box-shadow: 1px 1px 2px rgb(99, 99, 99);
-    border-radius: 50%;
+.caracteristica-logo > img {
+    max-width: 80%;
+    height: auto;
 }
 
 
 .caracteristica-descripcion {
-    margin: 20px auto;
+    margin: 2rem auto;
     align-items: flex-start;
     height: 20%;
     max-width: 80%;
 }
 .covid {
-    margin: 30px auto;
+    margin: 3rem auto;
 }
 
 .footer {
@@ -274,7 +273,6 @@ body {
     width: 100%;
     height: 1280px;
     z-index: -1;
-
 }
 
 .espaciado {
@@ -283,18 +281,18 @@ body {
 }
 
 .cabanas {
-    margin: 150px auto;
+    margin: 8rem auto;
     max-width: 1280px;
 }
 
 .cabanas-cabana {
     background-color: rgba(225,225,223,255);
     display: flex;
-    margin: 30px auto;
+    margin: 2rem auto;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgb(139, 132, 132);
-    border-top: 3px outset white;
-    border-left: 3px outset white;
+    border-top: 3px outset rgb(211, 211, 211);
+    border-left: 3px outset rgb(211, 211, 211);
 }
 
 .cabana-imagen {
@@ -347,4 +345,15 @@ body {
     background-color: rgba(211,211,209,255);
     filter: brightness(0.7);
 }
-  
+
+.fondo-ubicacion {
+    background-image: URL(Iconos/fondo\ ubicacionRecurso\ 5.jpg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1280px;
+    z-index: -1;
+}
