@@ -180,6 +180,8 @@ margin: 4rem auto;
 }
 .covid {
     margin: 3rem auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
 }
 
 .footer {
@@ -356,4 +358,14 @@ margin: 4rem auto;
     width: 100%;
     height: 1280px;
     z-index: -1;
+}
+
+@media screen and (max-width: 767px) {
+    
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+
 }
