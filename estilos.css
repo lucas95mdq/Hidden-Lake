@@ -49,7 +49,7 @@ body {
 }
 
 .fondo {
-    background-image: URL(recurso1.png);
+    background-image: URL(imagenes/recurso1.png);
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -67,11 +67,11 @@ body {
 
 .logo-logo {
     max-width: 50%;
-    margin: 10vw 20vw;
-}
+    margin: 350px auto;
+}   
 
 .bienvenida {
-    margin-top: 550px;
+margin-top: 200px;
 }
 
 .titulo {
@@ -360,12 +360,346 @@ margin: 4rem auto;
     z-index: -1;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+ 
+
     
+    .header-nav {
+        max-width: 100%;
+    }
+    
+    .header-nav-menu {
+        display: flex;
+        list-style: none;
+        margin-right: 20px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .header-nav-menu-item {
+        font-size: 24px;
+        margin-right: 20px;
+    }
+    
+    .fondo {
+        height: 1280px;
+    }
+
+    
+    .titulo {
+        margin: 7rem;
+        font-size: 54px;
+    }
+    .info {
+        font-size: 24px;
+        margin: 70px auto;
+        max-width: 770px;
+    }
+    
+    
+    .instalaciones {
+        margin-top: 100px;
+    }
+    
+    #carrusel-contenido {
+        width: 100%;
+    }
+    
+
+    .video > iframe {
+        max-width: 100%;
+    }
+    
+
+    .contenedor-logos {
+        font-size: 24px;
+    }
+    
+    
+    .footer-nav {
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+
+    .fondo-complejo {
+        height: 1080px;
+    }
+
+    .espaciado {
+        height: 1080px;
+    }
+    .cabanas {
+        margin: 8rem 1rem;
+        max-width: 100%;
+    }
+    
+
+    .cabana-descripcion-nombre {
+        margin: 1rem auto;
+        font-size: 28px;
+    }
+    
+    .cabana-descripcion {
+        margin: 1rem;
+    }
+    
+    .cabana-descripcion > p {
+        margin: 1rem auto;
+        margin-right: 1rem;
+        font-size: 20px;
+    }
+    .boton-reservar {
+        margin: 1rem auto;
+        padding: 1rem;
+    }
+    
+    .boton-reservar > a {
+        font-size: 28px;
+    }
+    
+    .fondo-ubicacion {
+        width: 100%;
+        height: 1080px;
+        z-index: -1;
+    }
+
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+@media screen and (max-width: 767px) {
+       
+    .header-nav {
+        max-width: 100%;
+    }
     
+    .header-nav-menu {
+        display: flex;
+        list-style: none;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .header-nav-menu-item {
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    
+    
+    .fondo {
+        height: 100%;
+    }
+    
+    .logo {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .logo-logo {
+        max-width: 50%;
+        margin: 250px auto;
+    }   
+    
+    .bienvenida {
+    margin-top: 150px;
+    }
+    
+    .titulo {
+        margin: 6rem;
+        font-size: 50px;
+    }
+    .info {
+        font-size: 25px;
+        margin: 80px auto;
+        max-width: 100%;
+    }
+    
+    
+    .instalaciones {
+        margin-top: 150px;
+    }
+    
+    #carrusel-contenido {
+        width: 100%;
+        margin: 50px auto;
+    }
+    
+        .video {
+        max-width: 100%;
+        height: auto;
+    }
+    .video > iframe {
+        max-width: 100%;
+        padding: 20px 0;
+    }
+    
+    .contenedor {
+    margin: 3rem auto;
+    }
+    .contenedor-logos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        margin: 10px auto;
+        font-size: 24px;
+    }
+    
+    .caracteristica {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 40%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    
+    .caracteristica-descripcion {
+        margin: 1rem auto;
+        align-items: flex-start;
+        height: 20%;
+        max-width: 80%;
+    }
+    .covid {
+        max-width: 90%;
+        text-align: justify;
+        margin: 3rem auto;
+        font-size: 18px;
+    }
+    
+    .footer-nav {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo-footer {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .logo-logo-footer {
+        max-width: 50%;
+        margin: 2rem auto;
+    }
+    
+    .footer-menu {
+        display:block;
+        width: 100%;
+        margin: 2rem auto;
+    }
+    
+    .footer-menu-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    
+    .footer-menu-item {
+        font-size: 18px;
+        font-weight: 100;
+        margin-bottom: 10px;
+    }
+    
+    .footer-contacto {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        font-weight: 100;
+        max-width: 33%;
+        margin-right: 2vw;
+    }
+    
+    .fa-brands {
+        margin-right: 5px;
+        margin-bottom: 10px;
+        scale: 1.3;
+    }
+    .footer-contacto-p {
+        font-size: 18px;
+        font-weight: 100;
+        margin-bottom: 10px;
+    }
+    
+    .redes{
+        font-size: 18px;
+    }
+    
+.fondo-complejo {
+    height: 800px;
+}
+
+.espaciado {
+    height: 800px;
+}
+
+.cabanas {
+    margin: 8rem 0.5rem;
+    max-width: 100%;
+}
+
+.cabanas-cabana {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+}
+
+.cabana-imagen {
+    width: 95%;
+    height: auto;
+    max-width: 100%;
+    margin: 1rem auto;
+}
+.cabana-imagen > img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.cabana-descripcion-nombre {
+    display: block;
+    margin: 1rem auto;
+    font-size: 22px;
+}
+
+.cabana-descripcion {
+    width: 95%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.cabana-descripcion > p {
+    margin: 1rem auto;
+    margin-right: 0;
+    font-size: 20px;
+}
+.boton-reservar {
+    display: flex;
+    margin: 1rem auto;
+    padding: 1rem;
+
+}
+
+.boton-reservar > a {
+    font-size: 22px;
+}
+    
+
+    .fondo-ubicacion {
+        width: 100%;
+        height: 800px;
+    }
 
 }
