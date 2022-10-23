@@ -363,6 +363,70 @@ margin: 4rem auto;
     z-index: -1;
 }
 
+
+
+
+
+
+.fondo-reserva {
+    background-image: URL(Imagenes/reserva.jpg);
+    background-position: center;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1280px;
+    z-index: -1;
+
+}
+
+
+.formulario {
+    max-width: 1280px;
+    margin: 50px auto;
+
+}
+
+.form {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid;
+    border-color: black;
+    border-radius: 20px;
+}
+.form > input, .form >select {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 1rem;
+    width: 97%;
+    font-family: montserrat, sans-serif;
+    font-size: 40px;
+    padding: 1rem;
+    background-color: transparent;
+    color: black;
+}
+
+#nombre, #apellido, #fechades, #fechahast {
+    width: 47%;
+}
+
+
+#Email {
+   width: 50%;
+}
+#telefono {
+    width: 44%;
+}
+
+
+.boton-formulario {
+font-size: 40px;
+padding: 2rem;
+border-radius: 5rem;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1280px) {
 
  
@@ -468,6 +532,49 @@ margin: 4rem auto;
         height: 1080px;
         z-index: -1;
     }
+    .fondo-complejo {
+        width: 100%;
+        height: 1080px;
+
+    }
+
+    .fondo-reserva {
+        height: 1080px;
+    }
+
+
+    .formulario {
+        max-width: 100%;
+        margin: 30px 1rem;    
+    }
+    
+    .form {
+        width: 100%;
+        
+    }
+    .form > input, .form >select {
+        font-size: 30px;
+    }
+    
+    #nombre, #apellido, #fechades, #fechahast {
+        width: 97%;
+    }
+    
+    
+    #Email {
+       width: 97%;
+    }
+    #telefono {
+        width: 97%;
+    }
+    
+    
+    .boton-formulario {
+    font-size: 35px;
+    padding: 1.5rem;
+    }
+
+
 
 
 }
@@ -705,5 +812,47 @@ margin: 4rem auto;
         width: 100%;
         height: 800px;
     }
+
+
+    .fondo-reserva {
+        width: 100%;
+        height: 880px;
+    }
+
+
+    .formulario {
+        max-width: 100%;
+        margin: 30px 1rem;    
+    }
+    
+    .form {
+        width: 100%;
+        
+    }
+    .form > input, .form >select {
+        font-size: 25px;
+    }
+    
+    #nombre, #apellido, #fechades, #fechahast {
+        width: 97%;
+    }
+    
+    
+    #Email {
+       width: 97%;
+    }
+    #telefono {
+        width: 97%;
+    }
+    
+    
+    .boton-formulario {
+    font-size: 30px;
+    padding: 1.5rem;
+    }
+
+
+
+
 
 }

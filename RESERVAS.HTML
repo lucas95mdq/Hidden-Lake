@@ -5,42 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hidden Lake</title>
-    <link rel="stylesheet" href="Index.css">
-
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9cb10a02ae.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/ico" href="iconos/Logo_1.ico" sizes=any> 
 </head>
 <body>
-<div class="introduccion">
-  <H1>                                   RESERVA TU CABAÑA</H1>  
-<div class=""></div>
 
-<div class="reserva-imagen">
-    <img src="reserva.jpg" alt="reserva">
-  </div>
+    <header>
+        <div class="header">
+          <nav class="header-nav">
+            <ul class="header-nav-menu">
+              <li class="header-nav-menu-item"><a href="index.html" class="subrrallado">INICIO</a></li>
+              <li class="header-nav-menu-item"><a href="complejo.html" class="subrrallado">COMPLEJO</a></li>
+              <li class="header-nav-menu-item"><a href="ubicacion.html" class="subrrallado">UBICACIÓN</a></li>
+              <li class="header-nav-menu-item"><a href="reservas.html" class="subrrallado active">RESERVAS</a></li>
+            </ul>
+          </nav> 
+        </div>
+     </header>
 
-<div class="Fecha">
-    <ul>
-        <li>
-            <label for=´fechaentrada´>Fecha de ingreso</label>
-            <input type="date" id="fecha">
-           
-        </li>
-
-            <li>
-                <label for=´fechasalida´>Fecha de Salida</label>
-                <input type="date" id="fecha">
-               
-            </li>
-
-   
-            <li>
-                <button type="submit">Reservar cabaña
-
-                </li>
+     <div class="fondo-reserva">
+    </div>
+    <DIV class="espaciado">
+    </DIV>
 
 
-  </ul>
-  
 
+    <section class="reserva">
+        <H1 class="titulo">
+        RESERVA TU CABAÑA
+        </H1>  
+
+        <div class="formulario">
+            <form action="mailto:lucasriveira@outlook.com" method="post" enctype="text/plain" class="form">
+                <input type="text" id="nombre" name="Nombre" placeholder="Nombre">
+                <input type="text" name="Apellido" id="apellido" placeholder="Apellido">
+                <input type="email" name="Mail" id="Email" placeholder="Mail">
+                <input type="number" name="telefono" id="telefono" placeholder="Número de contacto">
+                <select name="Cabaña" id="cabaña">
+                    <option value="Cabaña" hidden>Cabaña</option>
+                    <option value="Cualquiera">Sin Preferencia</option>
+                    <option value="Elite">Cabaña Elite</option>
+                    <option value="Bosque">Cabaña Bosque</option>
+                    <option value="Comfortable">Cabaña Confortable</option>
+                    <option value="Ladrillo">Cabaña Ladrillo</option>
+                </select><br>
+                <input type="date" name="fechades" id="fechades"">
+                <input type="date" id="fechahast" class="fecha"><br>
+                <button class="boton-reservar boton-formulario">Reservar</button>
+            </form>
+        </div>
+
+    </section>
+
+
+
+
+
+
+  <footer class="footer">
+    <div class="footer-nav">
+      <div class="logo-footer">
+        <img src="imagenes/Logo.png" alt="Hidden Lake" class="logo-logo-footer">
+      </div>
+      <div class="footer-menu">
+        <ul class="footer-menu-menu">
+          <li class="footer-menu-item"><a href="index.html" class="footer-menu-item-item">Inicio</a></li>
+          <li class="footer-menu-item"><a href="complejo.html" class="footer-menu-item-item">Complejo</a></li>
+          <li class="footer-menu-item"><a href="ubicacion.html" class="footer-menu-item-item">Ubicación</a></li>
+          <li class="footer-menu-item"><a href="reservas.html" class="footer-menu-item-item">Reservas</a></li>
+        </ul>
+      </div>
+      <div class="footer-contacto">
+        <div>
+        <p class="footer-contacto-p">
+        Contacto</p>
+        </div>
+        <div class="redes">
+          <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+          @hiddenlake
+          <br><br><br><br>
+        </div>
+      </div>
+    </div>
+  </footer> 
                                        
 
 </body>
