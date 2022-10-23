@@ -50,6 +50,7 @@ body {
 
 .fondo {
     background-image: URL(imagenes/recurso1.png);
+    background-position: center;
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -267,6 +268,7 @@ margin: 4rem auto;
 
 .fondo-complejo {
     background-image: URL(Iconos/fondo\ complejoRecurso\ 4.jpg);
+    background-position: center;
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -350,6 +352,7 @@ margin: 4rem auto;
 
 .fondo-ubicacion {
     background-image: URL(Iconos/fondo\ ubicacionRecurso\ 5.jpg);
+    background-position: center;
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -360,7 +363,7 @@ margin: 4rem auto;
     z-index: -1;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1280px) {
 
  
 
@@ -484,8 +487,8 @@ margin: 4rem auto;
         margin-bottom: 5px;
     }
     .header-nav-menu-item {
-        font-size: 20px;
-        margin-right: 20px;
+        font-size: 16px;
+        margin-right: 10px;
     }
     
     
@@ -539,6 +542,7 @@ margin: 4rem auto;
     .contenedor {
     margin: 3rem auto;
     }
+
     .contenedor-logos {
         display: flex;
         flex-direction: column;
