@@ -440,13 +440,13 @@ margin: 4rem auto;
     color: black;
 }
 
-.formulario-incorrecto{
+.formulario-incorrecto1,.formulario-incorrecto2, .formulario-incorrecto3, .formulario-incorrecto4 {
     color: rgb(126, 0, 0);
     font-size: 30px;
     justify-self: center;
 }
 
-.oculto, .oculto1, .oculto2,.oculto3,.oculto4 {
+.oculto {
     visibility: hidden;
 }
 
