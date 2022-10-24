@@ -40,12 +40,12 @@
         </H1>  
 
         <div class="formulario">
-            <form action="mailto:lucasriveira@outlook.com" method="post" enctype="text/plain" class="form">
-                <input type="text" id="nombre" name="Nombre" placeholder="Nombre">
-                <input type="text" name="Apellido" id="apellido" placeholder="Apellido">
-                <input type="email" name="Mail" id="Email" placeholder="Mail">
-                <input type="number" name="telefono" id="telefono" placeholder="Número de contacto">
-                <select name="Cabaña" id="cabaña">
+            <form action="mailto:lucasriveira@outlook.com" method="post" enctype="text/plain" class="form" id="form">
+                <input type="text" id="nombre" name="Nombre" placeholder="Nombre" class="item-form" required>
+                <input type="text" name="Apellido" id="apellido" placeholder="Apellido" class="item-form" required>
+                <input type="email" name="Mail" id="Email" placeholder="Mail" class="item-form" required>
+                <input type="number" name="telefono" id="telefono" placeholder="Número de contacto" class="item-form" required>
+                <select name="Cabaña" id="cabaña" class="item-form">
                     <option value="Cabaña" hidden>Cabaña</option>
                     <option value="Cualquiera">Sin Preferencia</option>
                     <option value="Elite">Cabaña Elite</option>
@@ -53,15 +53,16 @@
                     <option value="Comfortable">Cabaña Confortable</option>
                     <option value="Ladrillo">Cabaña Ladrillo</option>
                 </select><br>
-                <input type="date" name="fechades" id="fechades"">
-                <input type="date" id="fechahast" class="fecha"><br>
-                <button class="boton-reservar boton-formulario">Reservar</button>
+                <input type="date" name="fechades" id="fechades" class="item-form" required>
+                <input type="date" id="fechahast" class="fecha item-form" required><br>
+                <button type="submit" class="boton-reservar boton-formulario">Reservar</button>
+                <p class="oculto" id="error">*Rellenar correctamente el formulario</p>
             </form>
         </div>
 
     </section>
 
-
+    <script src="formulario.js"></script>
 
 
 
