@@ -402,7 +402,7 @@ margin: 4rem auto;
     margin: 1rem;
     width: 97%;
     font-family: montserrat, sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     padding: 1rem;
     background-color: transparent;
     color: black;
@@ -448,6 +448,15 @@ margin: 4rem auto;
 
 .oculto {
     visibility: hidden;
+}
+
+#app {
+    width: 1280px;
+    margin: 30px auto;
+    padding: 2rem;
+    border: 2px solid;
+    border-color: black;
+    border-radius: 20px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
@@ -576,7 +585,7 @@ margin: 4rem auto;
         
     }
     .form > input, .form >select {
-        font-size: 30px;
+        font-size: 25px;
     }
     
     #nombre, #apellido, #fechades, #fechahast {
@@ -593,11 +602,15 @@ margin: 4rem auto;
     
     
     .boton-formulario {
-    font-size: 35px;
+    font-size: 30px;
     padding: 1.5rem;
     }
 
-
+    #app {
+        max-width:95%;
+        padding: 1rem;
+    }
+    
 
 
 }
@@ -770,65 +783,65 @@ margin: 4rem auto;
         font-size: 18px;
     }
     
-.fondo-complejo {
-    height: 800px;
-}
+    .fondo-complejo {
+        height: 800px;
+    }
 
-.espaciado {
-    height: 800px;
-}
+    .espaciado {
+        height: 800px;
+    }
 
-.cabanas {
-    margin: 8rem 0.5rem;
-    max-width: 100%;
-}
+    .cabanas {
+        margin: 8rem 0.5rem;
+        max-width: 100%;
+    }
 
-.cabanas-cabana {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 2rem auto;
-}
+    .cabanas-cabana {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 2rem auto;
+    }
 
-.cabana-imagen {
-    width: 95%;
-    height: auto;
-    max-width: 100%;
-    margin: 1rem auto;
-}
-.cabana-imagen > img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
+    .cabana-imagen {
+        width: 95%;
+        height: auto;
+        max-width: 100%;
+        margin: 1rem auto;
+    }
+    .cabana-imagen > img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
 
-.cabana-descripcion-nombre {
-    display: block;
-    margin: 1rem auto;
-    font-size: 22px;
-}
+    .cabana-descripcion-nombre {
+        display: block;
+        margin: 1rem auto;
+        font-size: 22px;
+    }
 
-.cabana-descripcion {
-    width: 95%;
-    margin: 0 auto;
-    align-items: center;
-}
+    .cabana-descripcion {
+        width: 95%;
+        margin: 0 auto;
+        align-items: center;
+    }
 
-.cabana-descripcion > p {
-    margin: 1rem auto;
-    margin-right: 0;
-    font-size: 20px;
-}
-.boton-reservar {
-    display: flex;
-    margin: 1rem auto;
-    padding: 1rem;
+    .cabana-descripcion > p {
+        margin: 1rem auto;
+        margin-right: 0;
+        font-size: 20px;
+    }
+    .boton-reservar {
+        display: flex;
+        margin: 1rem auto;
+        padding: 1rem;
 
-}
+    }
 
-.boton-reservar > a {
-    font-size: 22px;
-}
+    .boton-reservar > a {
+        font-size: 22px;
+    }
     
 
     .fondo-ubicacion {
@@ -853,7 +866,7 @@ margin: 4rem auto;
         
     }
     .form > input, .form >select {
-        font-size: 25px;
+        font-size: 20px;
     }
     
     #nombre, #apellido, #fechades, #fechahast {
@@ -870,12 +883,15 @@ margin: 4rem auto;
     
     
     .boton-formulario {
-    font-size: 30px;
+    font-size: 25px;
     padding: 1.5rem;
     }
 
 
-
+    #app {
+        max-width:95%;
+        padding: 1rem;
+    }
 
 
 }
