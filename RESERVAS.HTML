@@ -11,7 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9cb10a02ae.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/ico" href="iconos/Logo_1.ico" sizes=any> 
-</head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+  </head>
 <body>
 
     <header>
@@ -31,6 +36,8 @@
     </div>
     <DIV class="espaciado">
     </DIV>
+
+   
 
 
 
@@ -62,8 +69,30 @@
     </section>
 
 
+    <div id="app">
+      <h4>Ud. Podrá pagar su estadía utilizando Bitcoins con este tipo de cambio:</h4>
+      
+      
+      <section v-if="errored">
+        <p>Lo sentimos, no es posible obtener la información en este momento, por favor intente nuevamente mas tarde</p>
+      </section>
+    
+      <section v-else>
+        <div v-if="loading">Cargando...</div>
+    
+        <div v-else v-for="currency in info"
+          class="currency" >
+          {{ currency.description }}:
+          <span class="lighten">
+            <span v-html="currency.symbol"></span>{{ currency.rate_float | currencydecimal }}
+          </span>
+        </div>
 
-
+        <P>Actualizado: {{time}}</P>
+    
+      </section>
+    </div>
+    <script src="js/api.js"></script>  
 
 
   <footer class="footer">
